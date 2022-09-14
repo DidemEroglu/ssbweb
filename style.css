@@ -365,6 +365,13 @@ textarea:focus {
       height: 40px;
       line-height: 39px; } }
 
+
+
+      @media only screen and (max-width: 767px) {
+        .navbar-brand {
+          max-width: 90px; } }
+
+
 /* :: 4.0 Search Wrapper */
 .search-wrapper {
   width: 100%;
