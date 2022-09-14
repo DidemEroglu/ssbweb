@@ -368,8 +368,8 @@ textarea:focus {
 
 
       @media only screen and (max-width: 767px) {
-        .navbar-brand {
-          max-width: 90px; } }
+        .delicious-main-menu breakpoint-off {
+          max-width: 15px; } }
 
 
 /* :: 4.0 Search Wrapper */
