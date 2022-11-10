@@ -138,7 +138,3 @@
 
 })(jQuery);
 
-const comment1= document.getElementById('comment1');
-comment1.addEventListener('submit',function(e) {
-    e.preventDefault()
-});

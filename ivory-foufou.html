@@ -819,20 +819,21 @@
                                             <div class="contact-form-area">
                                                 <form action="#" method="post" id="comment1">
                                                     <div class="row">
+                                                        <div class="col-12" id="showJson"></div>
                                                         <div class="col-12 col-lg-6">
                                                             <input type="text" class="form-control" id="name" required placeholder="İsim">
                                                         </div>
                                                         <div class="col-12 col-lg-6">
-                                                            <input type="email" class="form-control" id="email" placeholder="E-posta">
+                                                            <input type="email" class="form-control" id="email" required placeholder="E-posta">
                                                         </div>
                                                         <div class="col-12">
-                                                            <input type="text" class="form-control" id="subject" placeholder="Konu">
+                                                            <input type="text" class="form-control" id="subject" required placeholder="Konu">
                                                         </div>
                                                         <div class="col-12">
-                                                            <textarea name="message" class="form-control" id="message" cols="30" rows="10" placeholder="Mesajınız"></textarea>
+                                                            <textarea name="message" class="form-control" id="message" required cols="30" rows="10" placeholder="Mesajınız"></textarea>
                                                         </div>
                                                         <div class="col-12">
-                                                            <button class="btn delicious-btn mt-30" type="submit">Yorumu Yayınla</button>
+                                                            <button class="btn delicious-btn mt-30" type="submit" id="submitBtn" onclick="submitData()">Yorumu Yayınla</button>
                                                         </div>
                                                     </div>
                                                 </form>
@@ -956,6 +957,23 @@
                         <script src="js/plugins/plugins.js"></script>
                         <!-- Active js -->
                         <script src="js/active.js"></script>
+                        <script>
+                            $("#submitBtn").click(function(){
+                                var name =$("#name").val();
+                                var email=$("#email").val();
+                                var subject=$("#subject").val();
+                                var message=$("#message").val();
+
+                                $.post("",{
+                                    name:name,
+                                    //DEVAMI EVDE GELİYİİİİİİİİİİİİİİ node jssssssss
+
+                                },function(response){
+
+                                })
+
+                            })
+                        </script>
                     </body>
                     
                     </html>
