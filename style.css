@@ -704,12 +704,20 @@ textarea:focus {
       -webkit-transition-duration: 500ms;
       transition-duration: 500ms; }
       .single-best-receipe-area .receipe-content h5:hover, .single-best-receipe-area .receipe-content h5:focus {
-        color: #40ba37; }
+        color: #40ba37;
+        cursor: pointer;
+      
+      }
     .single-best-receipe-area .receipe-content .ratings i {
       font-size: 11px;
-      color: #fbb710;
+      color: purple;
       display: inline-block;
-      padding: 0 1px; }
+      padding: 0 1px; 
+      cursor: pointer;
+
+    
+    
+    }
 
 /* :: 9.0 Cta Area */
 .cta-area {
