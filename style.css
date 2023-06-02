@@ -1214,9 +1214,12 @@ textarea:focus {
     .breadcumb-area {
       height: 120px; } }
   .breadcumb-area .breadcumb-text h2 {
-    font-size: 30px;
+    font-size: 50px;
     margin-bottom: 0;
-    color: #ffffff; }
+    color: antiquewhite; 
+  font-family: ;
+  
+  }
     @media only screen and (max-width: 767px) {
       .breadcumb-area .breadcumb-text h2 {
         font-size: 24px; } }
